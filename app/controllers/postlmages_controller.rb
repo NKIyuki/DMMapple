@@ -11,9 +11,11 @@ class PostlmagesController < ApplicationController
   end
 
   def index
+    @post_images = Post.all
   end
 
   def show
+    @post_image = Post.find(params[:id])
   end
 
   def destroy
