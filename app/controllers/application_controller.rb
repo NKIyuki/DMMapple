@@ -8,6 +8,7 @@ before_action :configure_permitted_parameters, if: :devise_controller?
 
   def after_sign_out_path_for(resource)
     about_path
+  end
 
   protected
 

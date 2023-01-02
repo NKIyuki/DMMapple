@@ -19,6 +19,9 @@ class PostlmagesController < ApplicationController
   end
 
   def destroy
+    @post_image = destroy Postlmage all
+    @post_image.destroy
+    redirect_to post_images
   end
 
   private
